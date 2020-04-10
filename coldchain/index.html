@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>冷链设备温湿度大数据平台</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery.liMarquee.js"></script>
+    <script type="text/javascript" src="js/jquery.cxselect.min.js"></script>
+
+    <link rel="stylesheet" href="css/comon0.css">
+</head>
+<body>
+     <div style="background:#000d4a url(images/bg.jpg) center top;">
+        <div class="loading">
+            <div class="loadbox"> <img src="images/loading.gif"> 页面加载中... </div>
+        </div>
+        <div class="back"></div>
+        <div class="head">
+            <div class="weather"><span id="showTime"></span></div>
+            <h1>冷链设备温湿度大数据平台</h1>
+
+        </div>
+        
+        <div class="mainbox">
+            <ul class="clearfix">
+     <li>
+                    <div class="boxall" style="height:300px">
+                        <div class="alltitle">企业名称</div>
+                        <div class="navboxall">
+                            <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>2</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>3</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>4</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>5</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>6</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司</td
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="boxall" style="height:300px">
+                        <div class="alltitle">库房名称</div>
+                        <div class="navboxall">
+                            <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                    </tr>                         
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司库房</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>2</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司库房</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>3</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司库房</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>4</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司库房</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>5</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司库房</td
+                                    </tr>
+ 		    <tr>
+                                        <td><span>6</span></td>
+                                        <td>张家口盛世康华医疗器械有限公司库房</td
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+
+    <li>
+
+                    <div class="boxall" style="height:300px">
+                        <div class="alltitle">温度</div>
+                        <div class="navboxall" id="echart3"style="height:225px"></div>
+                            <div class="wraptit"style="height:27px">
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">天</span>
+										</label>
+                               		 </p>
+                                </span>
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">月</span>
+										</label>
+                               		 </p>
+                                </span>
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">季</span>
+										</label>
+                               		 </p>
+                                </span>
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">年</span>
+										</label>
+                               		 </p>
+                                </span>
+                           </div>
+
+                    </div>
+
+
+                    <div class="boxall" style="height:300px">
+                        <div class="alltitle">湿度</div>
+                        <div class="navboxall" id="echart4"style="height:225px"></div>
+                            <div class="wraptit"style="height:27px">
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">天</span>
+										</label>
+                               		 </p>
+                                </span>
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">月</span>
+										</label>
+                               		 </p>
+                                </span>
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">季</span>
+										</label>
+                               		 </p>
+                                </span>
+                                <span>
+                                	<p align="center">
+                                		<label for="toggle2" class="toggle2">
+  											<input type="checkbox" id="toggle2" class="toggle2-input">
+ 						 					<span class="toggle2-button">年</span>
+										</label>
+                               		 </p>
+                                </span>
+                           </div>                        
+                    </div>
+                </li>
+
+                
+           </li>               
+           </ul>
+
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('.wrap,.adduser').liMarquee({
+                direction: 'up',/*身上滚动*/
+                runshort: false,/*内容不足时不滚动*/
+                scrollamount: 20/*速度*/
+            });
+        });
+
+    </script>
+
+</body>
+</html>
